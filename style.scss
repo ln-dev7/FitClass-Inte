@@ -4,10 +4,6 @@ $white: #fff;
 $dark: #1f2041;
 $blue: #2c5ff6;
 
-// #D9FCF5
-// #FADFFC;
-// #DFF0FD
-
 * {
   margin: 0;
   padding: 0;
@@ -89,13 +85,13 @@ button {
   align-items: flex-start;
   padding: 1rem 3rem;
   position: relative;
-  .blur-1{
+  .blur-1 {
     position: absolute;
     top: -150px;
     right: -75px;
     z-index: -1;
   }
-  .blur-2{
+  .blur-2 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -142,5 +138,78 @@ button {
         color: $blue;
       }
     }
+  }
+}
+
+.title-top {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $dark;
+  .h2-vec {
+    width: 170px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 3rem;
+
+  .card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 370px;
+    height: 225px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    p{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    div{
+        z-index: 2;
+        button{
+            background: $white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: .25rem .5rem;
+        }
+    }
+  }
+  .card:nth-child(1){
+    background: #FADFFC;
+  }
+  .card:nth-child(2){
+    background: #D9FCF5;
+  }
+  .card:nth-child(3){
+    background: #DFF0FD;
   }
 }
