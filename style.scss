@@ -20,6 +20,7 @@ $blue: #2c5ff6;
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 li {
@@ -40,10 +41,6 @@ button {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: $white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,6 +69,7 @@ button {
       height: 50px;
       border-radius: 50%;
       box-shadow: 0 3px 37px 0 rgba($color: #07153d, $alpha: 0.15);
+      background: $white;
     }
     button {
       background: $blue;
@@ -88,9 +86,21 @@ button {
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-items: flex-start;
   padding: 1rem 3rem;
+  position: relative;
+  .blur-1{
+    position: absolute;
+    top: -150px;
+    right: -75px;
+    z-index: -1;
+  }
+  .blur-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
   .center {
     display: flex;
     align-items: center;

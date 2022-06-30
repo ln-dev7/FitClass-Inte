@@ -12,6 +12,7 @@
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 li {
@@ -32,10 +33,6 @@ button {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +92,7 @@ button {
   border-radius: 50%;
   -webkit-box-shadow: 0 3px 37px 0 rgba(7, 21, 61, 0.15);
           box-shadow: 0 3px 37px 0 rgba(7, 21, 61, 0.15);
+  background: #fff;
 }
 
 .header-join button {
@@ -115,11 +113,25 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1rem 3rem;
+  position: relative;
+}
+
+.main .blur-1 {
+  position: absolute;
+  top: -150px;
+  right: -75px;
+  z-index: -1;
+}
+
+.main .blur-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .main .center {
