@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800;900&display=swap");
+
+$white: #fff;
+$dark: #1f2041;
+$blue: #2c5ff6;
+
+// #D9FCF5
+// #FADFFC;
+// #DFF0FD
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: $dark;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  z-index: 3;
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+  &-join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 3px 37px 0 rgba($color: #07153d, $alpha: 0.15);
+    }
+    button {
+      background: $blue;
+      border-radius: 10px;
+      font-weight: 500;
+      color: $white;
+      padding: 0.5rem 1rem;
+      border: none;
+      box-shadow: 0 3px 37px 0 rgba($color: $blue, $alpha: 0.3);
+    }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-text {
+    h1 {
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: $dark;
+      .h1-vec {
+        position: absolute;
+        bottom: -15px;
+        right: 170px;
+      }
+    }
+    h4 {
+      padding: 2rem 0 1.5rem 0;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      button {
+        background: $blue;
+        border-radius: 10px;
+        font-weight: 500;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border: 2px solid $blue;
+        box-shadow: 0 3px 20px 0 rgba($color: $blue, $alpha: 0.3);
+      }
+      button:nth-child(2) {
+        background: $white;
+        color: $blue;
+      }
+    }
+  }
+}

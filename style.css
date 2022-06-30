@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: #1f2041;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 3rem;
+  z-index: 3;
+}
+
+.header-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-links li {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.header-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.header-join div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 37px 0 rgba(7, 21, 61, 0.15);
+          box-shadow: 0 3px 37px 0 rgba(7, 21, 61, 0.15);
+}
+
+.header-join button {
+  background: #2c5ff6;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  -webkit-box-shadow: 0 3px 37px 0 rgba(44, 95, 246, 0.3);
+          box-shadow: 0 3px 37px 0 rgba(44, 95, 246, 0.3);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+}
+
+.main .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-text h1 {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1f2041;
+}
+
+.main-text h1 .h1-vec {
+  position: absolute;
+  bottom: -15px;
+  right: 170px;
+}
+
+.main-text h4 {
+  padding: 2rem 0 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main-text-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+.main-text-button button {
+  background: #2c5ff6;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 2px solid #2c5ff6;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(44, 95, 246, 0.3);
+          box-shadow: 0 3px 20px 0 rgba(44, 95, 246, 0.3);
+}
+
+.main-text-button button:nth-child(2) {
+  background: #fff;
+  color: #2c5ff6;
+}
+/*# sourceMappingURL=style.css.map */
